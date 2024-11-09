@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shareable Resume Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1><i><u>Shareable Resume Builder</u></i></h1>
     <form id="resume-form">
         <fieldset>
             <legend>Personal Information</legend>
-
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter Your Username" required>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" placeholder="photo" accept="image/*" required>
 
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Enter Your Name" required>
@@ -45,13 +49,15 @@
 
         <button type="submit"><b>Generate Resume</b></button>
     </form>
+
     <br>
 
     <!-- Dynamic, Editable and Shareable Resume -->
-     <div id="resume-display" contenteditable="true">
+    <div id="resume-display" contenteditable="true">
         <!-- Resume will be generated below -->
-     </div>
-     <br>
+    </div>
+    <br>
+
     <!-- Section for the shareable link and download option -->
     <div id="shareable-link-container" style="display: none">
         <h2>Shareable Link</h2>
@@ -59,8 +65,12 @@
         <a href="#" id="shareable-link" target="_blank"></a>
         <br>
         <button id="download-pdf"><b>Download as PDF</b></button>
+
     </div>
 
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
+
+          
