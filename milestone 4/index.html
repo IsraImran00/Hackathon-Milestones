@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+          <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +9,16 @@
 </head>
 <body>
     <h1><i><u>Editable Resume Builder</u></i></h1>
+    
     <form id="resume-form">
         <fieldset>
             <legend>Personal Information</legend>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Your Username" required>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" accept="image/*" required>
+
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Enter Your Name" required>
 
@@ -41,13 +49,14 @@
 
         <button type="submit"><b>Generate Resume</b></button>
     </form>
+    
     <br>
 
-    <!-- Dynamic and Editable Resume -->
-     <div id="resume-display" contenteditable="true">
-        <!-- Resume will be generated below -->
-     </div>
+    <!-- Dynamic and Editable -->
+    <div id="resume-display" contenteditable="true">
+        <!-- Resume will be generated here -->
+    </div>
 
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
