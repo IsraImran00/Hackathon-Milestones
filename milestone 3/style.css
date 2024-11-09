@@ -1,83 +1,110 @@
-/* Styling form and resume sections */
 
+   /* Body styling */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
     padding: 0;
-    background-color: white;
+    background-color: #f4f4f4; /* Light gray background for a soft look */
 }
 
-
-form {
-    margin: auto;
-    background-color: rgb(255,182,193);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    max-width: 600px;
-}
-
-
+/* Title (Heading)  */
 h1 {
     text-align: center;
-    color: black;
+    font-size: 2.5rem;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 
+/* Form styling */
+form {
+    margin: auto;
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    border: 2px solid #2F4F4F; /* Slate gray border */
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: #003366; /* Navy Blue for a professional heading */
+}
+
+/* Fieldset and Legend */
 fieldset {
-    border: 2px solid mediumvioletred;
+    border: 2px solid #2F4F4F; /* Slate gray border for fieldsets */
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: pink;
+    background-color: #f9f9f9; /* Light background for form sections */
 }
 
 legend {
     font-weight: bold;
     text-align: left;
-    color: rgb(34, 29, 29);
+    color: #003366; /* Navy Blue for the legend text */
 }
 
+/* Label and Input Fields */
 label {
     display: block;
     margin-top: 10px;
-    color: black;
+    color: #36454F; /* Charcoal Gray for labels */
 }
 
-input,textarea {
+input, textarea {
     margin-top: 4px;
     padding: 8px;
     width: calc(100% - 1px);
-    border: 1px solid mediumvioletred;
+    border: 1px solid #2F4F4F; /* Slate gray border */
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+/* Button Styling */
 button {
     display: block;
     width: 100%;
-    background-color: mediumvioletred;
-    color: black;
+    background-color: #003366; /* Navy Blue for buttons */
+    color: #ffffff; /* White text */
     border: none;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
     padding: 10px;
     cursor: pointer;
 }
 
-button :hover {
-    color: hotpink;
+button:hover {
+    background-color: #002244; /* Darker Navy Blue on hover */
 }
 
+/* Resume Display Styling */
 #resume-display {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    border: 2px solid mediumvioletred;
+    border: 2px solid #2F4F4F; /* Slate gray border for resume section */
     border-radius: 8px;
-    background-color: rgb(255,182,193);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff; /* White background for the resume */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Profile Photo (circle and centered) */
+#resume-display img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+
+
